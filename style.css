@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    
+}
+
+body{
+    background-color: #F0F2F5;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+section.titre{
+    /* border: 1px solid black; */
+}
+
+section.titre h1{
+    font-size: 4em;
+    /* text-align: center; */
+    color: #1877F2;
+}
+
+
+
+section.formulaire form{
+    background-color: #fff;
+    margin: 30px 0;
+    height: 55vh;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 10px 10px 25px #dcdcdc;
+}
+
+
+div.input p input{
+    width: 95%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+   outline-color: #1877F2;
+   font-size: 1.5em;
+   border-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+
+#seConnecter{
+    background-color: #1877F2;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+}
+
+#mdp{
+    
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+.mpd{
+    text-align: center;
+    margin: 10px 0;
+    /* border: 1px solid black; */
+}
+
+hr{
+    margin: 30px 0;
+}
+
+#Compte{
+    background-color: #42b72a;
+    width: 80%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+.compte{
+    text-align: center;
+    margin: auto;
+   
+    /* border: 1px solid black; */
+}
+
+
+div.page{
+    text-align: center;
+}
+
+div.page a{
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+@media (max-width:500px){
+    main{
+        flex-direction: column;
+    }
+
+    section.formulaire form{
+        height: 60vh;
+    }
+
+    
+div.input p input{
+    font-size: 1.2em;
+}
+
+}
