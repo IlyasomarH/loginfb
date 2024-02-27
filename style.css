@@ -31,6 +31,11 @@ section.titre{
     /* border: 1px solid black; */
 }
 
+section.titre h2{
+    opacity: 0.5;
+    font-size: 1.0em;
+}
+
 section.titre h1{
     font-size: 4em;
     /* text-align: center; */
