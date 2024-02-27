@@ -1,3 +1,11 @@
+
+:root{
+    --colorBlue: #68f218;
+    --policePremiertitre: arial;
+    --policeParagraphere: calibri;
+    --tailleParagraphe:1.1em;
+
+}
 *{
     padding: 0;
     margin: 0;
@@ -26,9 +34,9 @@ section.titre{
 section.titre h1{
     font-size: 4em;
     /* text-align: center; */
-    color: #1877F2;
+    color: var(--colorBlue);
+    font-family: var(--policePremiertitre);
 }
-
 
 
 section.formulaire form{
@@ -47,15 +55,20 @@ div.input p input{
     margin: 10px 0;
     padding: 5px;
     border-radius: 10px;
-   outline-color: #1877F2;
+    outline-color:var(--colorBlue);
+ 
    font-size: 1.5em;
    border-color: rgba(0, 0, 0, 0.2);
     
 }
 
+div.input p input:focus{
+    box-shadow:1px 1px 5px  #6c9cdb ;
+   }
+
 
 #seConnecter{
-    background-color: #1877F2;
+    background-color:var(--colorBlue);
     color: white;
     font-weight: bold;
     font-size: 1.3em;
@@ -111,7 +124,7 @@ div.page a{
 
 
 
-@media (max-width:500px){
+@media screen and (max-width:800px){
     main{
         flex-direction: column;
     }
@@ -121,8 +134,23 @@ div.page a{
     }
 
     
-div.input p input{
-    font-size: 1.2em;
-}
+    div.input p input{
+        font-size: 1.2em;
+    }
+
+
+    div.input p input{
+        font-size: 1.1em;
+    }
+
+    section.titre h2{
+        display: none;
+    }
+
+    section.titre h1{
+        font-size: 3em;
+    }
+
+    
 
 }
